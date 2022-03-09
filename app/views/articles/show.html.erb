@@ -11,7 +11,10 @@
             <div class="mt-2"><%= render @article.categories %></div> 
           <% end %>
         </div>
-        <div class="card-body">
+        <div class="card-body"> 
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="<%= @article.source %>" allowfullscreen></iframe>
+          </div>
           <div class="card-text text-left"><%= simple_format(@article.description) %></div>
           <% if logged_in? && (@article.user == current_user || current_user.admin?) %>
           <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info" %>
