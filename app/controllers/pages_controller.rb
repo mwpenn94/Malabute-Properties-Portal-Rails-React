@@ -13,4 +13,9 @@ class PagesController < ApplicationController
   def sample_deal
   end
   
+  def privacy_policy
+  end
+
+  def terms_of_service
+  end
 end
