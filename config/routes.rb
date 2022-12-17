@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root 'pages#home'
   get 'contact_us', to: 'pages#contact_us'
-  get 'free', to: 'pages#free'
+  get 'free_ebook', to: 'pages#free'
+  get 'free_market_reports', to: 'pages#free_market_reports'
   get 'sample_deal', to: 'pages#sample_deal'
   get 'about', to: 'pages#about'
   get 'privacy_policy', to: 'pages#privacy_policy'
